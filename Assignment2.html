@@ -8,18 +8,31 @@
 </head>
 <body>
     <script>
- var myStringArray = ["#"];
+let chessBoard =()=>{
+    var size =8;
+ var chessBoard = "" 
+//  var arrayLength = myStringArray.length;
 
- var arrayLength = myStringArray.length;
-for (var i = 0; i <= 16 ; i++) {
-  console.log(myStringArray[i])
+for (var i = 0; i <size ; i++) {
+//   console.log(myStringArray[i])
+for (let j = 0; j <size; j++) {
 
-  if(array.length >)
-  {
 
-  }
+    // here we want to have number o
+    if((i+j)%2==0){
+      chessBoard+=" "
+    }
+    else{
+        chessBoard+="#"
+    }
+   
+}
+ 
 }
 
+console.log(chessBoard)
+}
+chessBoard() 
     </script>
 </body>
 </html>
