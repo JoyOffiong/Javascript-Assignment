@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var code = prompt("Enter your Unity Bank USSD code no de waste time")
+
+        if(code == "*7799#")
+        {
+         let menu = prompt( `
+                         Wehdone as you don finally enter Unity Bank zone today
+                         Shop have open, wetin you wan buy
+                         1. Airtime-yaself
+                         2. Airtime- person
+                         2. Data for person?
+                         3. Ahbi na Balance you wan sheck?
+                         4. Transer moni?`      
+                    )
+
+         switch(menu)
+                {
+
+                    //AIRTIME FOR SELF
+               case '1':
+            var airtime = prompt(`How much Airtime you wan buy
+                         1. 100
+                         2. 200
+                         3. 500
+                         4. 1000
+                         5. 2000
+                         99. Back
+                         `)
+               if(airtime < 99)
+               {
+                alert('welldone,we de run ahm' )
+                alert("We don send ahm, de try buy plenty.")
+               }
+               else
+               {
+                prompt(`Wehdone as you don finally enter Unity Bank zone today
+                         Shop have open, wetin you wan buy
+                         1. Airtime-yaself
+                         2. Airtime- Others
+                         2. Data?
+                         3. Ahbi na Balance you wan sheck?
+                         4. Transer moni?`      
+                    )
+               }
+               break
+
+
+               //AIRTIME FOR OTHERS
+               case '2':
+                let airtimeOthers =prompt('Oya enter the person number')
+                
+               if (airtimeOthers.length ==11)
+                {
+               let line =   prompt(`which line abeg
+                    1. MTN
+                    2. AIRTEL
+                    3. GLO
+                    4. ETISALAT `)
+            
+                        switch (line) {
+
+                            //mtn
+                            case '1':
+                            var amount =  prompt(`
+                                 100
+                                 200
+                                 500
+                                1000
+                                2000`)
+                            if( amount >=100)
+                            {
+                                alert(`You wan send ${amount} give ${airtimeOthers}, ahbi `)
+                               let confirmation= confirm('Oya na')
+                               if (confirmation = true) 
+                               {
+                                    alert( 'wehdone ma')
+                               } else {
+                                 alert('Scammer!!!!!, you wan scam bank, ahba comom now')    
+                               }
+                            }
+                            else{
+                                alert('which kind of playng are you playing')
+                            }
+                            break;
+
+
+                            //airtel
+                            case '2':
+                            var amount =  prompt(`
+                               100
+                               200
+                               500
+                               1000
+                               2000`)
+                            if( amount >= 100)
+                            {
+                               let confirmation= confirm(`You wan send ${amount} give ${n}, ahbi `)
+                               if (confirmation = true) 
+                               {
+                                    alert( 'wehdone ma')
+                               } else {
+                                 alert('Scammer!!!!!, you wan scam bank, ahba comom now')    
+                               }
+                            }
+                            else{
+                                alert('which kind of playing are you playing')
+                            }
+                            break;
+
+                            //GLO
+                            case '3':
+                            var amount =  prompt(`
+                               100
+                               200
+                               500
+                               1000
+                               2000`)
+                            if( amount >= 100)
+                            {
+                               let confirmation= confirm(`You wan send ${amount} give ${n}, ahbi `)
+                               if (confirmation = true) 
+                               {
+                                    alert( 'wehdone ma')
+                               } else {
+                                 alert('Scammer!!!!!, you wan scam bank, ahba comom now')    
+                               }
+                            }
+                            else{
+                                alert('which kind of playing are you playing')
+                            }
+                            break;
+
+                             //ETISALAT
+                             case '3':
+                            var amount =  prompt(`
+                               100
+                               200
+                               500
+                               1000
+                               2000`)
+                            if( amount >= 100)
+                            {
+                               let confirmation= confirm(`You wan send ${amount} give ${n}, ahbi `)
+                               if (confirmation = true) 
+                               {
+                                    alert( 'wehdone ma')
+                               } else {
+                                 alert('Scammer!!!!!, you wan scam bank, ahba comom now')    
+                               }
+                            }
+                            else{
+                                alert('which kind of playing are you playing')
+                            }
+                            break;
+                            }
+
+                            //
+                        }
+                else{
+                 alert( 'abeg look that number again, make I no vex')  
+                } 
+                break    
+                      
+                
+                //DATA FOR OTHERS
+                case '3': 
+                let data = prompt(`which network you wan buy data from abeg, sharp sharp
+                  1.  MTN
+                  2.  AIRTEL
+                  3.  GLO
+                  4.  ETISALAT
+                `)
+               switch( data){
+                 case 1:  var dataLine = prompt(`
+                    100mb - 100
+                    200mb - 200
+                    500mb - 500
+                   1000mb - 700
+                   1500mb - 1000
+                    `)          
+
+               if( dataLine>= 100){
+                   var number= prompt(' oya put the person number here make we run ahm sharp sharp')
+                    if (number.length==11) {
+                        var confirmation= confirm(`You sure sey you wan send ${dataLine} give ${number}`)
+                        if(confirm== true){
+                            alert(" we don run ahm, small madam don de send person data")
+                        }
+                        else{
+                            alert('you wan de feel like big person ahbi')
+                        }
+                    }
+                }
+                else{
+                   alert("chai, no de waste person time abeg")
+                }
+                break
+
+
+                // Airtel data
+                case 2: 
+                let dataLine = prompt(`
+                    100mb - 50
+                    200mb - 150
+                    500mb - 300
+                   1000mb - 500
+                   1500mb - 800
+                    `)          
+
+               if( dataLine>= 50){
+                    let number= prompt(' oya put the person number here make we run ahm sharp sharp')
+                    if (number.length==11) {
+                        var confirmation= confirm(`You sure sey you wan send ${dataLine} give ${number}`)
+                        if(confirm== true){
+                            alert(" we don run ahm, small madam don de send person data")
+                        }
+                        else{
+                            alert('you wan de feel like big person ahbi')
+                        }
+                    }
+                }
+                else{
+                   alert("chai, no de waste person time abeg")
+                }
+                break
+
+
+                //GLO 
+                case 3: 
+                var dataLine = prompt(`
+                    200mb - 150
+                    500mb - 250
+                    700mb - 300
+                   1000mb - 500
+                   1500mb - 800
+                    `)          
+
+               if( dataLine>= 50){
+                    var number= prompt(' oya put the person number here make we run ahm sharp sharp')
+                    if (number.length==11) {
+                        var confirmation= confirm(`You sure sey you wan send ${dataLine} give ${number}`)
+                        if(confirm== true){
+                            alert(" we don run ahm, small madam don de send person data")
+                        }
+                        else{
+                            alert('you wan de feel like big person ahbi')
+                        }
+                    }
+                }
+                else{
+                   alert("chai, no de waste person time abeg")
+                }
+                break
+
+
+                //etisalat
+                case 4: 
+                var dataLine = prompt(`
+                    200mb - 150
+                    500mb - 250
+                    700mb - 300
+                   1000mb - 500
+                   1500mb - 800
+                    `)          
+
+               if( dataLine>= 50){
+                    var number= prompt(' oya put the person number here make we run ahm sharp sharp')
+                    if (number.length==11) {
+                        var confirmation= confirm(`You sure sey you wan send ${dataLine} give ${number}`)
+                        if(confirm== true){
+                            alert(" we don run ahm, small madam don de send person data")
+                        }
+                        else{
+                            alert('you wan de feel like big person ahbi')
+                        }
+                    }
+                }
+                else{
+                   alert("chai, no de waste person time abeg")
+                }
+                break
+
+              
+            }
+
+
+                 //Balance            
+                 case 4: 
+                let balance = prompt(' Aunty, which money you get where you wan come check abeg, mmmm/n oya put ypur account number na, make we check')
+                if (balance.length == 10){
+                    alert('You no even get money you de make noise/n 2,000')
+                }
+                else{
+                    alert(' Which kind of playing are you playing, no be legit account number be this na')
+                }
+                 
+                break
+             
+            }
+
+               
+                
+        }
+        else{
+            alert('no be your bank ussd be this o')
+        }
+</script>
+</body>
+</html>

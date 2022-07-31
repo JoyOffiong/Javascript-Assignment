@@ -1,0 +1,135 @@
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Assignment</title>
+            </head>
+            <body>
+                <script>
+                    var code=prompt('Oya enter your bank ussd na')
+            
+                    if(code == '*7799#')
+                    {   
+                    var menu = prompt(
+                        `
+                        WELCOME TO UNITY BANK
+                        we don open shop, wetin you wan buy
+                        1. Airtime-yaself
+                        2. Data?
+                        3. Ahbi na Balance you wan sheck?
+                        4. Transer moni?`
+                        )
+
+                        // Airtime-yaself
+                        if (menu == 1 )
+                    {
+                        var airtime= prompt(`How much Airtime you wan buy
+                        1. 100
+                        2. 200
+                        3. 500
+                        6. 1000`)
+                        
+                        if (airtime >= '1'){
+                            alert('Your request de load, try wait smail')
+                            alert('as you buy airtime today you don try, thank you se you buy da')
+                        
+                        }
+                        else{
+                            alert('You no be serious person o, walai')
+                        }
+                    
+                    }
+
+                    // data
+                    else if(menu==2){
+                        var data=   prompt(`how much u wan buy
+                            1.100mb for N100
+                            2. 200mb for N200
+                            3. 1000mb for N500
+                            4. 1500mb for N1,000
+                            5. 2gig for N1,500`
+                        )
+                        if(data>= 4 ){
+                        
+                alert('AHHHHHH small Madam don de get money to buy so much data')
+
+                    var confirmation = confirm("You sure?")
+                    if(confirmation == true){
+                        alert('omo madam i don spam you 2gig, I de believe your govt. Thank you se you use our bank buy ahm')
+                        }
+                    else{
+                        alert('I for talk o, where you see money abeg')
+            } 
+                        }
+                    }
+                    
+
+                    //  balance
+                    else if(menu == 3){
+                        // var money = "20000"
+                    var balance= alert(`Network de run ahm, try wait small`)
+                    alert (`Your money na 200k`)
+
+                        alert(`thank you se you de use our bank` )
+                    }
+
+                    // transfers
+                    else if(menu == '4'){
+                        var transfer = prompt(`Enter account number sharp sharp`)
+                        if (transfer = '0271085730'){
+                            prompt(`
+                                1. Ecobank
+                                2. Polaris Bank
+                                3. United Bank of Africa 
+                                4. Access Bank`)
+
+                        }
+                    else{
+                        alert('abeg, look that number again')
+                    }
+                        if (transfer = '1'){
+                            alert(`Joy Offiong
+                                    Ecobank
+                                    0271085730`)
+                        
+                        var money=prompt(`Enter Amount`)
+                        if (money='10000'){
+                            alert('madam wer de dash money, we de process ahm')
+                            
+                        let confirmation= confirm(`Abeg look his info again
+                                    Joy Offiong
+                                    Ecobank
+                                    0271085730
+                                    10000`)
+                        if( confirmation== true){
+                            alert(`Transaction successful`)
+                        } 
+                            else{
+                                alert(`which kind play are you playing?`)
+                            }
+                            
+                        
+                        }
+                    }
+                
+
+                    }
+                }
+
+                    // transfer moni
+
+                
+                
+                //     var balance = 'my money'
+                //      if(code == '3'){
+                //        alert( 'e de load try wait small')
+                //         }
+                //      if(balance == 12,000){
+                //         alert('see ahm here = 12,000')
+                //     }
+                        
+                </script>
+            </body>
+            </html>
